@@ -6,10 +6,10 @@ modded class PlayerBase
 	void ZenCOD_SendMessage(string message)
 	{
 		Param1<string> m_MessageParam = new Param1<string>("");
-		if (GetGame().IsServer() && m_MessageParam && IsAlive() && message != "")
+		if (g_Game.IsServer() && m_MessageParam && IsAlive() && message != "")
 		{
 			m_MessageParam.param1 = message;
-			GetGame().RPCSingleParam(this, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, GetIdentity());
+			g_Game.RPCSingleParam(this, ERPCs.RPC_USER_ACTION_MESSAGE, m_MessageParam, true, GetIdentity());
 		}
 	}
 

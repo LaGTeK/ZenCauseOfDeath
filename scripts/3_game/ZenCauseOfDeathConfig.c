@@ -17,7 +17,7 @@ class ZenCauseOfDeathConfig
 	// Load config file or create default file if config doesn't exsit
 	void Load()
 	{
-		if (GetGame().IsServer())
+		if (g_Game.IsServer())
 		{
 			if (FileExist(zenModFolder + zenConfigName))
 			{	// If config exists, load file

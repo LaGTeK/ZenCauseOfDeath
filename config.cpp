@@ -36,7 +36,7 @@ class CfgMods
 			class gameScriptModule
 			{
 				value = "";
-				files[] = { "ZenCauseOfDeath/scripts/3_game"; };
+				files[] = { "ZenCauseOfDeath/scripts/3_game" };
 			};
 			class worldScriptModule
 			{
